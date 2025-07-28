@@ -57,8 +57,10 @@ It offers role-based access, form validation, and administrative features to eff
 
 - controllers/     — Web controllers (handle views and routes)
 - config/          — General configuration (security, application settings, etc.)
-- domain/          — Entities and JPA repositories
-- infrastructure/  — Service interfaces and business logic implementations
+- models/          — Entities and JPA
+- repositories/    — repositories
+- security/        — security config
+- service/         — Service interfaces and business logic implementations
 - resources/       — Configuration files (application.properties, etc.)
 - templates/       — Thymeleaf HTML templates
 - static/          — Static assets (CSS, JS, images)
