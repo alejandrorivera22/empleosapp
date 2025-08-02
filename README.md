@@ -84,7 +84,7 @@ scalability by following common Spring Boot practices.
 
 ### 2. Clone the repository
 git clone https://github.com/alejandrorivera22/empleosapp.git
-cd cineapp
+cd empleosapp
 
 ### 3. Custom Configuration (Image Path and Cvs)
 - On Windows:
@@ -95,8 +95,8 @@ cd cineapp
   **empleos.ruta.cv=/home/youruser/empleosapp/filescv/**
 
 ### 4. Sample Images
-- **Important:** You must copy these images into the folder you defined in ciena.ruta.images
-  so the application can display them correctly at runtime.
+- **Important:** You must copy these images from src/main/resources/copy/images to the folder defined in empleos.ruta.images and these CVs from src/main/resources/copy/files-cv to the folder defined in empleos.ruta.cv
+so that the application can display them correctly at runtime.
 
 ### 5. Start MySQL
 - docker-compose up -d
