@@ -85,7 +85,7 @@ Esta estructura mejora la mantenibilidad, modularidad y escalabilidad.
 
 ### 2. Clonar el repositorio
 git clone https://github.com/alejandrorivera22/empleosapp.git
-cd cineapp
+cd empleosapp
 
 ### 3. Configuración personalizada (Ruta de imágenes y CV)
 - En Windows:
@@ -96,10 +96,8 @@ cd cineapp
   **empleos.ruta.cv=/home/youruser/empleosapp/filescv/**
 
 ### 4. Copiar imágenes de ejemplo
-- **IMPORTANTE:** You must copy the images and CVs located in the
-  main/resources/copy folders you defined
-  to empleos.ruta.images and empleos.ruta.cv so that the application can
-display them correctly at runtime.
+- **IMPORTANTE:** Debes copiar estas imágenes src/main/resources/copy/images a la carpeta definida enempleos.ruta.images y los estos CVs src/main/resources/copy/files-cv a la carpeta definida en empleos.ruta.cv
+para que la aplicación pueda mostrarlas correctamente en el tiempo de ejecución.
 
 ### 5. Levantar MySQL
 docker-compose up -d
@@ -113,18 +111,19 @@ docker-compose up -d
 
 ---
 ## Usuarios de prueba
-These users are preloaded into the database (`data.sql`)  
-and can be used to simulate authentication and authorization  
-according to the different roles available in the system.
+
+Estos usuarios están precargados en la base de datos (`data.sql`) 
+y pueden utilizarse para simular la autenticación y la autorización según los diferentes roles disponibles en el sistema.
 
 | Rol            | Username       | Contraseña |
 |----------------|----------------|------------|
 | SUPERVISOR     | `luis`         | `luis123`  |
 | ADMINISTRADOR  | `marisol `     | `mari123`  |
 
-> Passwords are encrypted using BCrypt.  
-> These credentials are provided for local testing purposes only.
+>Las contraseñas se cifran con BCrypt.
+> Estas credenciales se proporcionan únicamente para pruebas locales.
 
+Autor
 ---
 **Alejandro Rivera**
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://www.linkedin.com/in/alejandro-rivera-verdayes-443895375/)
